@@ -1,0 +1,408 @@
+% LaTeX resume using res.cls
+\documentclass[line]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{newcent}   % uses new century schoolbook postscript font
+
+
+
+\renewcommand{\sl}{\itshape\bfseries} % \sl will be bold italic in New Century Schoolbook (or any postscript font) and just slanted in Computer Modern (default) font
+\newcommand{\fullrule}{\nointerlineskip\moveleft\hoffset\vbox{\hrule width \resumewidth}\nointerlineskip}
+\newcommand{\heading}{\hspace{-\sectionwidth}Hugh Wimberly   \hfill (505) 750--4844   \hfill hugh.wimberly@gmail.com \vskip 2pt \fullrule}
+
+
+
+\begin{document}
+\name{\huge Hugh Wimberly}
+
+\begin{format}
+\employer{l}\\ % Include location in \employer{}; {\sl } around employer name, plaintext for city, statecat poster.ps | nc 129.138.6.9 9100
+\title{l} \\ % \dates{r} removed because of spacing (use \hfill instead)
+\body\\
+\end{format}
+
+\begin{resume}
+
+
+%%% CONTACT INFORMATION %%%
+\vspace{-1.5em}
+\section{}
+	hugh.wimberly@gmail.com          \hfill 2005 Rose Street \\
+	(505) 750--4844                  \hfill Berkeley, CA 94709
+
+%%%% OBJECTIVE %%%
+%\section{Objective} \vspace{0.5em}
+
+
+%%% RELEVANT EXPERIENCE %%%
+\section{Relevant Experience} \vspace{0.5em}
+
+
+\employer{{\sl Headspsace Health}
+%	\hfill Mountain View, CA
+}
+\title{Senior Data Engineer \hfill 11/2020--6/2022}
+\dates{11/2020--6/2022}
+\begin{position}
+\begin{sublist}
+\item Supported the infrastructure and data needs for a team of 6 ML engineers and 2 data analysts
+\item Built maintainable machine learning pipelines orchestrated with AWS CDK
+\item Designed HIPPA-compliant de-identification schemes to satisfy cross-functional analytics needs
+\item Created an efficient and secure n-gram aggregator for detailed trend analysis
+\end{sublist}
+\end{position}
+
+
+\employer{{\sl Toptal} \textit{(data engineering consultant)}}
+
+\title{Client: \textit{fortune 500 insurance company}  \hfill 2/2020--5/2020}
+\dates{09/2019--04/2020}
+\begin{position}
+\begin{sublist}
+\item Advised on transition from on-prem to cloud (AWS) hosted data and services
+\item Simplified and streamlined transition plan, reducing third-party dependencies
+\item Designed kafka-based interop between extant mainframes and new elastic ECS services
+\end{sublist}
+\end{position}
+
+\employer{}
+\vspace{-2em} % Same employer
+\title{Client: \textit{fortune 100 healthcare company}  \hfill 9/2019--1/2020}
+\dates{09/2019--01/2020}
+\begin{position}
+\begin{sublist}
+\item Developed methodology for comparing performance of initiatives run by different teams
+\item Designed data architecture for major cross-team reporting dashboard
+\item Guided data science team in adopting best-practices
+\end{sublist}
+\end{position}
+
+\employer{}
+\vspace{-2em} % Same employer
+\title{Client: \textit{major canadian retail group}  \hfill 1/2019--7/2019}
+\dates{01/2019--07/2019}
+\begin{position}
+\begin{sublist}
+\item Moved core analytics database from SQL Server to Azure Data Warehouse
+\item Optimized bottleneck operations, improving analytics latency from 20 hours to 40 minutes
+\item Guided team adoption of Docker, CircleCI; led testing and automation initiative
+\end{sublist}
+\end{position}
+
+\employer{}
+\vspace{-2em} % Same employer
+\title{Client: \textit{fortune 500 restaurant group}  \hfill 9/2018--1/2019}
+\dates{09/2018--01/2019}
+\begin{position}
+\begin{sublist}
+\item Migrated data science workflow to Azure Data Warehouse (previously self-managed)
+\item Reduced analytics pipeline latency from 30 hours to 6 hours and improved reliability
+\item Advised and assisted in transition from pure Python to a PySpark workflow 
+\end{sublist}
+\end{position}
+
+% \employer{}
+% \vspace{-2em} % Same employer
+% \title{Client: \textit{education startup}  \hfill 5/2018--9/2018}
+% \dates{05/2018--09/2018}
+% \begin{position}
+% \begin{sublist}
+% \item Reduced the AWS bill by 80\% by applying DynamoDB best practices
+% \item Improved the page-load speed 5x by prefetching and prewarming serverless APIs
+% \item Eliminated the need for additional Redis hosting and caching
+% \item Reduced the API latency by 70\% by increasing parallelism
+% \end{sublist}
+% \end{position}
+
+
+\employer{{\sl Udacity}
+%	\hfill Mountain View, CA
+}
+\title{Senior Backend Engineer \hfill 2/2015--8/2015}
+\dates{02/2015--08/2015}
+\begin{position}
+\begin{sublist}
+\item Optimized backend to reduce CPU usage by 70\% and decrease AppEngine bill by \$30K/mo.
+\item Migrated legacy monolithic AppEngine site to AWS microservices
+\item Internationalized and localized main website for India launch
+\item Replaced payment backend to add Stripe support
+\end{sublist}
+\end{position}
+
+
+\employer{{\sl Google}, \textit{Knowledge Graph \& Machine Intelligence}
+%	\hfill Mountain View, CA
+}
+\title{Software Engineer III \hfill 2/2012--2/2015}
+\dates{02/2012--07/2014}
+\begin{position}
+\begin{sublist}
+\item R\&D work on Google-scale in-memory distributed graph database
+\item Wrote two optimizing query compilers (for two source languages)
+\item Created visual debugger for inspecting graph diffs
+\item Led project test infrastructure improvements (recognized with Spot award)
+\end{sublist}
+\end{position}
+
+% \pagebreak
+
+% \employer{{\sl New Mexico Institute of Mining and Technology}, \textit{Computer science department}}
+% \title{Instructor, CSE 221 Computer Systems Organization
+% 	\hfill 8/2011--12/2011}
+% \dates{08/2011--12/2011}
+% \begin{position}
+% \begin{sublist}
+% \item Set curriculum and syllabus to meet new course objectives
+% \item Created 4 team projects, 6 solo projects, 2 midterms and a final
+% \item Taught a lecture and lab for 33 students
+% \item Responsible for all grading---wrote import scrips and autograders to ease project grading
+% \end{sublist}
+% \end{position}
+
+% \employer{{\sl Los Alamos National Laboratory}, \textit{Advanced Computing Solutions (ACS)}}
+% \title{Scientist II \hfill 1/2011--8/2011}
+% \dates{01/2011--08/2011}
+% \begin{position}
+% \begin{sublist}
+% \item Designed and prototyped a 100,000--node fully decentralized Command \& Control framework
+% \item Wrote firmware patches to update network packet capture software for new 10G interfaces
+% \item Carried out experiments to compare architectures for a custom petabyte scale database
+% \item Assisted in the design and analysis of a 10,000--subject phishing experiment
+% \end{sublist}
+% \end{position}
+
+
+% \employer{{\sl Idaho National Laboratory}, \textit{Nuclear non--proliferation team}}
+% \location{}
+% \title{Computational specialist \hfill 6/2010--8/2010}
+% \dates{06/2010--08/2010}
+% \begin{position}
+% \begin{sublist}
+% \item Wrote high-performance inverse spectroscopy GPU code (CUDA) for a novel radioisotope detector
+% \item Worked with a team to develop statistical analyses of fuel diversion scenarios
+% \end{sublist}
+% \end{position}
+
+
+% \employer{{\sl New Mexico Computing Applications Center}}
+% \title{Simulation team lead \hfill 6/2008--12/2008}
+% \dates{06/2008--12/2008}
+% \begin{position}
+% \begin{sublist}
+% \item Designed an MPI-parallel traffic simulator for the New Mexico Department of Transportation
+% \item Taught a summer high school programming course
+% \end{sublist}
+% \end{position}
+
+
+% \employer{{\sl Boost C++}, \textit{Google Summer of Code}}
+% \title{Open-source developer \hfill 5/2007--8/2007}
+% \dates{05/2007--08/2007}
+% \begin{position}
+% \begin{sublist}
+% \item Extended the Boost.Regex C++ library to allow recursive matching and named sub-expressions
+% % \item Cross-platform development in C++
+% \end{sublist}
+% \end{position}
+
+
+% \employer{{\sl Microsoft Corporation}, \textit{Anti-phishing team}}
+% \title{Sofware Development Engineer Intern \hfill 5/2006--8/2006}
+% \dates{05/2006--08/2006}
+% \begin{position}
+% \begin{sublist}
+% % \item Developed anti-phishing feedback site to coalesce IE user experiences into a knowledge database
+% \item Constructed prototype server frameworks to evaluate replacements for IE's anti-phishing service
+% \item Discovered and repaired a latent security vulnerability in the Microsoft anti-phishing servers
+% \end{sublist}
+% \end{position}
+
+
+% \employer{{\sl Rensselaer Polytechnic Institute}, \textit{Computer Science Department}
+% 	\hfill Troy, NY}
+% \title{Undergraduate TA, Computer Science I \hfill 01/2007--05/2007}
+% \dates{01/2007--05/2007}
+% \begin{position}
+% \begin{sublist}
+% \item Held office hours and graded C assignments for $\sim$50 students
+% \end{sublist}
+% \end{position}
+%
+% \employer{}
+% \vspace{-2.25em} % Used because worked for same employer
+% \title{Undergraduate TA, C for Engineers \hfill 01/2006--05/2006}
+% \dates{01/2006--05/2006}
+% \begin{position}
+% \begin{sublist}
+% \item Lectured in lab and graded C assignments for $\sim$20 students
+% \end{sublist}
+% \end{position}
+%
+% \employer{}
+% \vspace{-2.25em} % Used because worked for same employer
+% \title{Lab TA, Data Structures and Algorithms \hfill 01/2005--05/2005}
+% \dates{01/2005--05/2005}
+% \begin{position}
+% \begin{sublist}
+% \item Graded algorithms labs for $\sim$30 students
+% \end{sublist}
+% \end{position}
+
+%\employer{{\sl Young Dragons}, Jim Hawkes Karate Academy
+%	\hfill Albuquerque, NM}
+%\title{Instructor}
+%\dates{12/2002--08/2005}
+%\begin{position}
+%\begin{sublist}
+%\item Taught karate classes for children and adults at various skill levels
+%\item General office activities, including managing membership and billing
+%\end{sublist}
+%\end{position}
+
+% \employer{{\sl Geophysical Solutions}}
+% \title{Sofware engineer \hfill 5/2003--8/2003}
+% \dates{05/2003--08/2003}
+% \begin{position}
+% \begin{sublist}
+% \item Wrote code to render 3-D maps of underground magnetic fields
+% \item Worked with electromagnetic sensors in the field to gather test data
+% \item Rewrote and updated FORTRAN 77 geodetic software in C++
+% \end{sublist}
+% \end{position}
+
+
+%\pagebreak
+%\heading
+
+
+%%% EDUCATION %%% 
+\section{Education}  \vspace{0.5em}
+
+% Master's degree
+\employer{{\sl New Mexico Institute of Mining and Technology (NMT)} 
+%	\hfill Socorro, NM
+}
+\title{\textit{pursued Ph.D in Computer Science, no degree awarded} \hfill 8/2007--12/2011}
+\dates{8/2007--12/2011}
+\begin{position}
+\begin{sublist}
+\item Concentration: Information Security and Assurance
+\end{sublist}
+\end{position}
+
+% Bachelor's degree
+%\vspace{-4.75em} % Used because received from same university
+\employer{{\sl Rensselaer Polytechnic Institute (RPI)} 
+%	\hfill Troy, NY
+}
+\title{B.S. in Computer Science \hfill 8/2003--5/2007}
+\dates{May 2007}
+\begin{position}
+\begin{sublist}
+\item Concentration: Bioinformatics
+\end{sublist}
+\end{position}
+
+
+%%%% RELEVANT COURSEWORK %%%
+%\section{Relevant Coursework} \vspace{0.5em}
+%
+%{\sl Security \& Information Assurance} \\
+%\begin{sublist}
+%\item Cryptography \& Applications; Network Forensics; Sensor Networking: Routing \& Security
+%\end{sublist}
+%
+%{\sl Computer Science} \\
+%\begin{sublist}
+%\item Advanced Parallel Processing; Artificial Intelligence; Computability \& Complexity
+%\item Compiler Writing; Software Design and Documentation
+%\end{sublist}
+%
+%{\sl Data Management} \\
+%\begin{sublist}
+%\item Database Design; Database \& Knowledge-base Systems; Management of Sensor and Other Data
+%\end{sublist}
+%
+%{\sl Mathematics} \\
+%\begin{sublist}
+%\item Mathematical Modeling; Stochastic Methods; Analysis; Abstract Algebra; Number Theory
+%\end{sublist}
+
+               
+%%% PUBLICATIONS %%%
+% \section{Publications} \vspace{0.5em}
+% \begin{mainlist}
+
+% %\item H.~Wimberly, ``Effects of biometric security on existing security mechanisms,'' Master's thesis, New Mexico Institute of Mining and Technology, December 2011.
+
+% \item H.~Wimberly and L.M~Liebrock, ``Using fingerprint authentication to reduce system security: an empirical study,'' \emph{IEEE Symposium on Security and Privacy 2011}, May 2011.
+
+% \item D.~Gerts, H.~Wimberly, and N.~Fredette, ``Using {GPU} programming for inverse spectroscopy,'' in \emph{INMM 51: Proceedings of 51th Annual Meeting of the Institute of Nuclear Materials Management}, July 2010.
+
+% \item S.~Miller, M. ~Fisk, C. ~Hash, H. ~Wimberly, and CP.~Wood, ``Forensic flow query \& analysis,'' talk presented at \emph{FloCon 2010}, January 2010.
+
+% \item H.~Wimberly, M.~Deters, T.~Johnson, and L.~Liebrock, ``Parallel transportation   microsimulator with dynamic routing control,'' \emph{SC '08: Proceedings of the 2008 ACM/IEEE conference on Supercomputing}, November 2008.
+
+% \item H.~Wimberly and H.~Soliman, ``A fuzzy Markovian chain model to predict sensor data: A power saving mechanism,'' \emph{IEEE INFOCOM 2008: The 27th Conference on Computer Communications}, April 2008.
+% \end{mainlist}
+
+
+%%% HONORS AND AWARDS %%%
+%\section{Honors and Awards}  \vspace{0.5em}
+%\begin{mainlist}
+%\item \textit{Scholarship for Service (SFS)}, National Science Foundation (NSF) and Department of Homeland Security (DHS) \hfill 2009--2011
+%\item \textit{Student Representative}, RPI CS Curriculum Committee \hfill 2006--2007
+%\item \textit{Secretary/Historian}, RPI Players Executive Committee \hfill 2005--2006
+%\item \textit{Director}, ``Love Stories During the Armageddon of a Citrus Fruit'' (play) \hfill 2006
+%\item \textit{1st Place}, New Mexico Supercomputing Challenge/AiS \hfill 2003
+%\end{mainlist}
+
+
+%%% REFERENCES %%%
+%\pagebreak
+%\heading
+%
+%\section{References} \vspace{0.5em}
+%
+%{\sl Lorie M. Liebrock, Ph.D.} \\
+%Principal Investigator, Scholarship for Service \\
+%Associate Professor and Department Chair \\
+%Department of Computer Science \& Engineering \\
+%New Mexico Institute of Mining and Technology \\
+%801 Leroy Place \\
+%Socorro, NM 87801 \\
+%Email: liebrock@cs.nmt.edu \\
+%Phone: (575) 835--6729 \\
+%
+%{\sl Richard R.M. Metcalf} \\
+%Nuclear Engineer, Nuclear non-proliferation \\
+%Idaho National Laboratory \\
+%525 N. Fremont Avenue \\
+%P.O. Box 1625, Idaho Falls, ID 83415 \\
+%Email: richard.metcalf@inl.gov \\
+%Phone: (208) 526--3938 \\
+%
+%{\sl Michael Fisk} \\
+%Scientist, Advanced Computing Solutions \\
+%Los Alamos National Laboratory \\
+%P.O. Box 1663, Los Alamos, NM 87545 \\
+%Email:  mfisk@lanl.gov \\
+%Phone: (505) 667--5119 \\
+%
+%{\sl Dongwan Shin, Ph.D.} \\
+%Associate Professor \\
+%Department of Computer Science \& Engineering \\
+%New Mexico Institute of Mining and Technology \\
+%801 Leroy Place \\
+%Socorro, NM 87801 \\
+%Email: doshin@cs.nmt.edu \\
+%Phone: (575) 835--6459 \\
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
